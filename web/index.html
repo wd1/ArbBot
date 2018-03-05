@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>ARBITRATOR Live View</title>
+        <link href="ptoc.css" rel="stylesheet" type="text/css">
+        <link href="webfont/cryptocoins.css" rel="stylesheet" type="text/css">
+        <link href="webfont/cryptocoins-colors.css" rel="stylesheet" type="text/css">
+
+        <script type="text/javascript" src="flot/jquery.min.js"></script>
+        <script type="text/javascript" src="flot/jquery.flot.min.js"></script>
+        <script type="text/javascript" src="flot/jquery.flot.navigate.min.js"></script>
+        <script type="text/javascript" src="flot/jquery.flot.orderBars.js"></script>
+        <script type="text/javascript" src="flot/jquery.flot.time.min.js"></script>
+        <script type="text/javascript" src="flot/jquery.flot.tooltip.js"></script>
+        <script type="text/javascript" src="scripts/js.cookie.min.js"></script>
+
+        <script type="text/javascript" src="ui.js"></script>
+
+    </head>
+    <body>
+        <div id="content">
+
+            <div class="floating-container">
+                <center><h3 id="graphHeading">Total BTC</h3>
+                  <span class="smooth"><input type="checkbox" id="smooth"> <label for="smooth">Smooth curve</label></span>
+                </center>
+                <div class="chart-container">
+                    <div id="placeholder" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="floating-container">
+                <center><h3 id="wage">Wallets</h3></center>
+                <div class="wallet-container">
+                    <div id="wallets" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="floating-container">
+                <center><h3>Recent trades</h3></center>
+                <div class="need-container">
+                    <div id="trades" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="floating-container">
+                <center><h3>Management</h3></center>
+                <div class="need-container">
+                    <div id="management" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="floating-container">
+                <center><h3>Xfers</h3></center>
+                <div class="need-container">
+                    <div id="xfers" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="floating-container">
+                <center><h3>Stats</h3></center>
+                <div class="need-container">
+                    <div id="stats" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div>
+                <center><h3>Logfile</h3></center>
+                <div class="log-container">
+                    <div id="logfile" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div>
+                <center><h3 id="pl-title" title="Profit & Loss">P&L
+                   <span class="links"><a href="#" class="showPLSummary">Last 24 Hours</a>/<a href="#" class="showPLDetails">All</a>/<a href="#" class="showPLGraph">Daily Graph</a>/<a href="#" class="showPLCoinGraph">Per-Coin Graph</a></span></h3></center>
+                <div class="pl-container">
+                    <div id="pl" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div>
+                <center><h3>Alerts</h3></center>
+                <div class="alert-container">
+                    <div id="alerts" class="demo-placeholder"></div>
+                </div>
+            </div>
+
+            <div class="clear"></div>
+
+            <div id="admin-ui">
+                <center><h3>Admin UI</h3></center>
+                <div class="admin-ui-container">
+                    <div class="demo-placeholder">
+                      <div>Autobuy funds: <input type="number" min="0" step="0.00000001" id="autobuy"> <input type="button" value="Update" id="autobuy-update"> <span id="autobuy-status"></span></div>
+                      <div><span id="bot-status"></span> <input type="button" value="" id="bot-ctrl"></div>
+                      <div id="config-editor-parent"><h5>Config Editor</h5><div id="config-editor"></div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>
